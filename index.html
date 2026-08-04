@@ -218,6 +218,59 @@
     const aboutClose = document.getElementById('aboutClose');
     const storedComments = JSON.parse(localStorage.getItem('postComments') || '{}');
 
+    function getImageCandidates(path) {
+      const candidates = [path];
+      if (path.startsWith('Images/')) {
+        candidates.push(path.replace('Images/', 'images/'));
+      } else if (path.startsWith('images/')) {
+        candidates.push(path.replace('images/', 'Images/'));
+      }
+      return [...new Set(candidates)];
+    }
+
+    function applyImageFallback(img) {
+      if (!img?.getAttribute('src')) return;
+      const candidates = getImageCandidates(img.getAttribute('src'));
+      let index = 0;
+
+      img.addEventListener('error', () => {
+        index += 1;
+        if (index < candidates.length) {
+          img.src = candidates[index];
+        }
+      });
+    }
+
+    function setBodyBackgroundImage() {
+      const candidates = getImageCandidates('Images/foto1.jpg');
+      let index = 0;
+
+      function tryNext() {
+        if (index >= candidates.length) {
+          return;
+        }
+
+        const testImg = new Image();
+        const nextPath = candidates[index];
+
+        testImg.onload = () => {
+          document.body.style.backgroundImage = `url('${nextPath}')`;
+        };
+
+        testImg.onerror = () => {
+          index += 1;
+          tryNext();
+        };
+
+        testImg.src = nextPath;
+      }
+
+      tryNext();
+    }
+
+    document.querySelectorAll('img[src]').forEach(applyImageFallback);
+    setBodyBackgroundImage();
+
     menuButton.addEventListener('click', openMenu);
     menuClose.addEventListener('click', closeMenu);
     menuBackdrop.addEventListener('click', closeMenu);
