@@ -220,11 +220,21 @@
 
     function getImageCandidates(path) {
       const candidates = [path];
+      const fileName = path.includes('/') ? path.split('/').pop() : path;
+
       if (path.startsWith('Images/')) {
         candidates.push(path.replace('Images/', 'images/'));
       } else if (path.startsWith('images/')) {
         candidates.push(path.replace('images/', 'Images/'));
+      } else {
+        candidates.push(`Images/${fileName}`);
+        candidates.push(`images/${fileName}`);
       }
+
+      if (fileName) {
+        candidates.push(fileName);
+      }
+
       return [...new Set(candidates)];
     }
 
@@ -242,7 +252,7 @@
     }
 
     function setBodyBackgroundImage() {
-      const candidates = getImageCandidates('Images/foto1.jpg');
+      const candidates = getImageCandidates('foto1.jpg');
       let index = 0;
 
       function tryNext() {
