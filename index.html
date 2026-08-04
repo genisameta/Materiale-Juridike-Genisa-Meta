@@ -15,7 +15,12 @@
         <input id="searchInput" type="text" placeholder="Search" />
       </div>
       <button class="search-button" id="searchToggle" aria-label="Search">
-        <img src="Images/search-icon.svg" alt="Search" class="search-icon" />
+        <img
+          src="search-icon.svg"
+          alt="Search"
+          class="search-icon"
+          onerror="if(!this.dataset.fallbackStep){this.dataset.fallbackStep='1';this.src='Images/search-icon.svg';}else if(this.dataset.fallbackStep==='1'){this.dataset.fallbackStep='2';this.src='images/search-icon.svg';}"
+        />
       </button>
     </div>
     <div class="search-status" id="searchStatus" aria-live="polite"></div>
