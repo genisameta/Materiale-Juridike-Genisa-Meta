@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Materiale Juridike - Genisa Meta</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <button class="menu-button" aria-label="Open menu">☰</button>
+    <h1>Materiale Juridike - Genisa Meta</h1>
+    <div class="search-controls">
+      <div class="search-panel hidden" id="searchPanel">
+        <input id="searchInput" type="text" placeholder="Search" />
+      </div>
+      <button class="search-button" id="searchToggle" aria-label="Search">
+        <img src="Images/search-icon.svg" alt="Search" class="search-icon" />
+      </button>
+    </div>
+    <div class="search-status" id="searchStatus" aria-live="polite"></div>
+  </header>
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <div class="menu-header">
+      <button class="menu-close" aria-label="Close menu">✕</button>
+      <img src="Images/foto2.jpg" alt="Foto" class="menu-avatar" id="menuAvatar" />
+      <div class="menu-actions">
+        <button class="menu-action-button" id="aboutButton" type="button">Rreth meje</button>
+        <button class="menu-action-button" id="contactButton" type="button">Kontakt</button>
+      </div>
+      <div class="contact-info hidden" id="contactInfo">
+        <p><strong>Email:</strong> genisameta06@gmail.com</p>
+        <p><strong>Tel:</strong> +38343990118</p>
+      </div>
+    </div>
+  </nav>
+  <div class="menu-backdrop"></div>
+  <div class="about-overlay hidden" id="aboutOverlay" aria-hidden="true">
+    <div class="about-content">
+      <button class="overlay-close" id="aboutClose" aria-label="Mbyll">✕</button>
+      <div class="about-body" id="aboutBody">
+        <h2>Rreth meje</h2>
+        <p>Ky faqe përmban materiale juridike dhe modele dokumentesh për përdorim të shpejtë.</p>
+      </div>
+    </div>
+  </div>
+  <div class="lightbox-overlay hidden" id="photoLightbox" aria-hidden="true">
+    <div class="lightbox-content">
+      <img src="Images/foto2.jpg" alt="Foto e madhe" class="lightbox-image" />
+    </div>
+  </div>
+  <main class="content">
+    <section class="post-card" data-post-id="post-1">
+      <div class="post-date">July 31, 2026</div>
+      <h2>HISTORIKU I KRIMINALISTIKËS</h2>
+      <p class="post-subtitle">Punim seminarik • Dokument Word</p>
+
+      <div class="post-actions">
+        <button class="comment-button" type="button">Post a Comment</button>
+        <a class="download-button" href="KUPTIMI DHE RËNDËSIA E KRIMINALISTIKËS.docx" download>Shkarko</a>
+        <a class="read-more" href="post.html" target="_blank" rel="noopener">READ MORE</a>
+      </div>
+      <div class="comment-meta">
+        <span class="comment-count">0 komente</span>
+      </div>
+      <div class="comment-form hidden">
+        <textarea class="comment-input" placeholder="Shkruaj koment..." rows="3"></textarea>
+        <button class="submit-comment-button" type="button">Dërgo</button>
+      </div>
+      <div class="comment-list"></div>
+      <button class="share-button" aria-label="Share post">⇪</button>
+    </section>
+
+    <section class="post-card" data-post-id="post-2">
+      <div class="post-date">July 31, 2026</div>
+      <h2>MODEL I KONTRATËS PËR QIRANË</h2>
+      <p class="post-subtitle">Model kontrate • Dokument Word</p>
+
+      <div class="post-actions">
+        <button class="comment-button" type="button">Post a Comment</button>
+        <a class="download-button" href="MODEL I KONTRATËS PËR QIRANË.docx" download>Shkarko</a>
+        <a class="read-more" href="post-qirane.html" target="_blank" rel="noopener">READ MORE</a>
+      </div>
+      <div class="comment-meta">
+        <span class="comment-count">0 komente</span>
+      </div>
+      <div class="comment-form hidden">
+        <textarea class="comment-input" placeholder="Shkruaj koment..." rows="3"></textarea>
+        <button class="submit-comment-button" type="button">Dërgo</button>
+      </div>
+      <div class="comment-list"></div>
+      <button class="share-button" aria-label="Share post">⇪</button>
+    </section>
+
+    <section class="post-card" data-post-id="post-3">
+      <div class="post-date">July 31, 2026</div>
+      <h2>PUNIM SEMINARIK - KUSHTET PËR LIDHJEN E KONTRATAVE ME SHPËRBLIM</h2>
+      <p class="post-subtitle">Punim seminarik • Dokument Word</p>
+
+      <div class="post-actions">
+        <button class="comment-button" type="button">Post a Comment</button>
+        <a class="download-button" href="PUNIM SEMINARIK - KUSHTET PËR LIDHJEN E KONTRATAVE ME SHPËRBLIM.docx" download>Shkarko</a>
+        <a class="read-more" href="post-sherbim.html" target="_blank" rel="noopener">READ MORE</a>
+      </div>
+      <div class="comment-meta">
+        <span class="comment-count">0 komente</span>
+      </div>
+      <div class="comment-form hidden">
+        <textarea class="comment-input" placeholder="Shkruaj koment..." rows="3"></textarea>
+        <button class="submit-comment-button" type="button">Dërgo</button>
+      </div>
+      <div class="comment-list"></div>
+      <button class="share-button" aria-label="Share post">⇪</button>
+    </section>
+
+    <section class="post-card" data-post-id="post-4">
+      <div class="post-date">July 31, 2026</div>
+      <h2>MODEL I KONTRATËS MBI SHITBLERJEN E AUTOMJETIT</h2>
+      <p class="post-subtitle">Model kontrate • Dokument Word</p>
+
+      <div class="post-actions">
+        <button class="comment-button" type="button">Post a Comment</button>
+        <a class="download-button" href="MODEL I KONTRATËS MBI SHITBLERJEN E AUTOMJETIT.docx" download>Shkarko</a>
+        <a class="read-more" href="post-shitblerje.html" target="_blank" rel="noopener">READ MORE</a>
+      </div>
+      <div class="comment-meta">
+        <span class="comment-count">0 komente</span>
+      </div>
+      <div class="comment-form hidden">
+        <textarea class="comment-input" placeholder="Shkruaj koment..." rows="3"></textarea>
+        <button class="submit-comment-button" type="button">Dërgo</button>
+      </div>
+      <div class="comment-list"></div>
+      <button class="share-button" aria-label="Share post">⇪</button>
+    </section>
+
+    <section class="post-card" data-post-id="post-5">
+      <div class="post-date">July 31, 2026</div>
+      <h2>MODEL I ANKESËS</h2>
+      <p class="post-subtitle">Model ankese • Dokument Word</p>
+
+      <div class="post-actions">
+        <button class="comment-button" type="button">Post a Comment</button>
+        <a class="download-button" href="MODEL I ANKESËS.docx" download>Shkarko</a>
+        <a class="read-more" href="post-ankese.html" target="_blank" rel="noopener">READ MORE</a>
+      </div>
+      <div class="comment-meta">
+        <span class="comment-count">0 komente</span>
+      </div>
+      <div class="comment-form hidden">
+        <textarea class="comment-input" placeholder="Shkruaj koment..." rows="3"></textarea>
+        <button class="submit-comment-button" type="button">Dërgo</button>
+      </div>
+      <div class="comment-list"></div>
+      <button class="share-button" aria-label="Share post">⇪</button>
+    </section>
+
+    <section class="post-card" data-post-id="post-6">
+      <div class="post-date">July 31, 2026</div>
+      <h2>PUNIM SEMINARIK NGA E DREJTA ADMINISTRATIVE</h2>
+      <p class="post-subtitle">Punim seminarik • Dokument Word</p>
+
+      <div class="post-actions">
+        <button class="comment-button" type="button">Post a Comment</button>
+        <a class="download-button" href="PUNIM SEMINARIK NGA E DREJTA ADMINISTRATIVE.docx" download>Shkarko</a>
+        <a class="read-more" href="post-administrative.html" target="_blank" rel="noopener">READ MORE</a>
+      </div>
+      <div class="comment-meta">
+        <span class="comment-count">0 komente</span>
+      </div>
+      <div class="comment-form hidden">
+        <textarea class="comment-input" placeholder="Shkruaj koment..." rows="3"></textarea>
+        <button class="submit-comment-button" type="button">Dërgo</button>
+      </div>
+      <div class="comment-list"></div>
+      <button class="share-button" aria-label="Share post">⇪</button>
+    </section>
+
+    <section class="post-card" data-post-id="post-7">
+      <div class="post-date">July 31, 2026</div>
+      <h2>MODEL I PËRGJIGJES NË PADI</h2>
+      <p class="post-subtitle">Model përgjigjeje • Dokument Word</p>
+
+      <div class="post-actions">
+        <button class="comment-button" type="button">Post a Comment</button>
+        <a class="download-button" href="MODEL I PËRGJIGJES NË PADI.docx" download>Shkarko</a>
+          <a class="read-more" href="post-pergjigje.html" target="_blank" rel="noopener">READ MORE</a>
+      </div>
+      <div class="comment-meta">
+        <span class="comment-count">0 komente</span>
+      </div>
+      <div class="comment-form hidden">
+        <textarea class="comment-input" placeholder="Shkruaj koment..." rows="3"></textarea>
+        <button class="submit-comment-button" type="button">Dërgo</button>
+      </div>
+      <div class="comment-list"></div>
+      <button class="share-button" aria-label="Share post">⇪</button>
+    </section>
+
+  </main>
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuBackdrop = document.querySelector('.menu-backdrop');
+    const menuClose = document.querySelector('.menu-close');
+    const searchToggle = document.getElementById('searchToggle');
+    const searchPanel = document.getElementById('searchPanel');
+    const searchInput = document.getElementById('searchInput');
+    const searchStatus = document.getElementById('searchStatus');
+    const contentArea = document.querySelector('.content');
+    const menuAvatar = document.getElementById('menuAvatar');
+    const photoLightbox = document.getElementById('photoLightbox');
+    const aboutButton = document.getElementById('aboutButton');
+    const contactButton = document.getElementById('contactButton');
+    const contactInfo = document.getElementById('contactInfo');
+    const aboutOverlay = document.getElementById('aboutOverlay');
+    const aboutBody = document.getElementById('aboutBody');
+    const aboutClose = document.getElementById('aboutClose');
+    const storedComments = JSON.parse(localStorage.getItem('postComments') || '{}');
+
+    menuButton.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    menuBackdrop.addEventListener('click', closeMenu);
+    menuAvatar?.addEventListener('click', openLightbox);
+    photoLightbox?.addEventListener('click', closeLightbox);
+    aboutButton?.addEventListener('click', () => openInfoOverlay('about'));
+    contactButton?.addEventListener('click', showContactInfo);
+    aboutClose?.addEventListener('click', closeInfoOverlay);
+    aboutOverlay?.addEventListener('click', (event) => {
+      if (event.target === aboutOverlay) {
+        closeInfoOverlay();
+      }
+    });
+    searchToggle?.addEventListener('click', toggleSearch);
+    searchInput?.addEventListener('input', searchDocuments);
+    searchInput?.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        searchDocuments();
+      }
+    });
+
+    function openMenu() {
+      mobileMenu?.classList.add('open');
+      menuBackdrop?.classList.add('visible');
+    }
+
+    function closeMenu() {
+      mobileMenu?.classList.remove('open');
+      menuBackdrop?.classList.remove('visible');
+    }
+
+    function openLightbox() {
+      if (photoLightbox) {
+        photoLightbox.classList.remove('hidden');
+        photoLightbox.classList.add('visible');
+        photoLightbox.setAttribute('aria-hidden', 'false');
+      }
+    }
+
+    function closeLightbox() {
+      if (photoLightbox) {
+        photoLightbox.classList.remove('visible');
+        photoLightbox.classList.add('hidden');
+        photoLightbox.setAttribute('aria-hidden', 'true');
+      }
+    }
+
+    function openInfoOverlay(type) {
+      closeMenu();
+      if (!aboutOverlay || !aboutBody) return;
+
+      aboutOverlay.classList.remove('hidden');
+      aboutOverlay.classList.add('visible');
+      aboutOverlay.setAttribute('aria-hidden', 'false');
+
+      if (type === 'contact') {
+        aboutBody.innerHTML = `
+          <h2>Kontakt</h2>
+          <p>Email: genisameta06@gmail.com</p>
+          <p>Tel: +383 43 990 118</p>
+        `;
+      } else {
+        aboutBody.innerHTML = `
+          <h2>Përshëndetje!</h2>
+          <p>Unë jam Genisa Meta, studente në Fakultetin Juridik të Universitetit të Prishtinës, me interes të veçantë për studimin, hulumtimin dhe ndarjen e njohurive në fushën e së drejtës.</p>
+          <p>Këtë faqe e kam krijuar me qëllim që t’u ofroj studentëve, studiuesve dhe të gjithë të interesuarve qasje në materiale juridike që nevojiten gjatë studimeve.</p>
+          <p>Shpeshherë përballemi me raste kur nuk mund të gjejmë materiale të përshtatshme për një lëndë, provim apo çfarëdo nevoje tjetër gjatë viteve të studimit bachelor. Në veçanti, studentët hasin vështirësi në gjetjen e modeleve të shkresave, parashtresave apo dokumenteve të tjera juridike.</p>
+          <p>Për këtë arsye, vendosa të krijoj një platformë ku do të publikohen shënime, artikuj, literaturë dhe shkresa juridike që mund të jenë të dobishme në procesin e të nxënit dhe zhvillimit profesional.</p>
+          <p>Qëllimi i kësaj faqeje është të kontribuojë në shpërndarjen e dijes juridike dhe të mbështesë studentët në rrugëtimin e tyre akademik.</p>
+          <p>Shpresoj që, sado pak, të gjeni ndihmën e kërkuar.</p>
+        `;
+      }
+    }
+
+    function closeInfoOverlay() {
+      aboutOverlay?.classList.add('hidden');
+      aboutOverlay?.classList.remove('visible');
+      aboutOverlay?.setAttribute('aria-hidden', 'true');
+    }
+
+    function showContactInfo() {
+      if (!contactInfo) return;
+      contactInfo.classList.toggle('hidden');
+      if (!contactInfo.classList.contains('hidden')) {
+        contactInfo.classList.add('visible');
+      } else {
+        contactInfo.classList.remove('visible');
+      }
+    }
+
+    function normalizeText(text) {
+      return text
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/\p{Diacritic}/gu, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function getPostCards() {
+      return Array.from(document.querySelectorAll('.post-card'));
+    }
+
+    function searchDocuments() {
+      const request = searchInput?.value.trim() || '';
+      const query = normalizeText(request);
+      let anyMatch = false;
+
+      getPostCards().forEach((card) => {
+        const hay = normalizeText([
+          card.querySelector('h2')?.textContent,
+          card.querySelector('.post-subtitle')?.textContent,
+          card.querySelector('.post-date')?.textContent,
+        ]
+          .filter(Boolean)
+          .join(' '));
+
+        if (!query || hay.includes(query)) {
+          card.classList.remove('hidden');
+          card.style.display = '';
+          if (query && hay.includes(query)) {
+            card.classList.add('search-match');
+            anyMatch = true;
+          } else {
+            card.classList.remove('search-match');
+          }
+        } else {
+          card.classList.add('hidden');
+          card.style.display = 'none';
+          card.classList.remove('search-match');
+        }
+      });
+
+      if (!query) {
+        searchStatus.textContent = '';
+      } else if (!anyMatch) {
+        searchStatus.textContent = 'Nuk ka material';
+      } else {
+        searchStatus.textContent = '';
+      }
+    }
+
+    function toggleSearch() {
+      if (!searchPanel) return;
+      const isHidden = searchPanel.classList.contains('hidden');
+      searchPanel.classList.toggle('hidden');
+      if (!isHidden) {
+        searchInput.value = '';
+        searchStatus.textContent = '';
+      } else {
+        searchInput.focus();
+      }
+    }
+
+    function getCommentsForPost(postId) {
+      return storedComments[postId] || [];
+    }
+
+    function saveComments() {
+      localStorage.setItem('postComments', JSON.stringify(storedComments));
+    }
+
+    function renderComments(card) {
+      const postId = card.dataset.postId;
+      const comments = getCommentsForPost(postId);
+      const countEl = card.querySelector('.comment-count');
+      const listEl = card.querySelector('.comment-list');
+
+      if (countEl) {
+        countEl.textContent = `${comments.length} komente`;
+      }
+      if (listEl) {
+        listEl.innerHTML = comments
+          .map((text) => `<div class="comment-item">${text}</div>`)
+          .join('');
+      }
+    }
+
+    function toggleCommentForm(card) {
+      const form = card.querySelector('.comment-form');
+      if (!form) return;
+      form.classList.toggle('hidden');
+      if (!form.classList.contains('hidden')) {
+        form.querySelector('.comment-input')?.focus();
+      }
+    }
+
+    contentArea?.addEventListener('click', (event) => {
+      const button = event.target.closest('button');
+      if (!button) return;
+
+      if (button.matches('.comment-button')) {
+        const card = button.closest('.post-card');
+        if (card) toggleCommentForm(card);
+      }
+
+      if (button.matches('.submit-comment-button')) {
+        const card = button.closest('.post-card');
+        if (!card) return;
+
+        const postId = card.dataset.postId;
+        const textarea = card.querySelector('.comment-input');
+        const value = textarea?.value.trim();
+        if (!value) {
+          textarea?.focus();
+          return;
+        }
+
+        if (!storedComments[postId]) {
+          storedComments[postId] = [];
+        }
+
+        storedComments[postId].push(value);
+        saveComments();
+        renderComments(card);
+        if (textarea) {
+          textarea.value = '';
+          textarea.focus();
+        }
+      }
+    });
+
+    document.querySelectorAll('.post-card').forEach((card) => renderComments(card));
+  </script>
+</body>
+</html>
