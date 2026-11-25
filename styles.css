@@ -673,6 +673,29 @@ body {
     white-space: pre-wrap;
   }
 
+  .document-body h3 {
+    margin: 22px 0 10px;
+    color: #2e4d5b;
+    font-size: 1.08rem;
+    line-height: 1.35;
+  }
+
+  .document-body h3:first-of-type {
+    margin-top: 8px;
+  }
+
+  .document-body ol,
+  .document-body ul {
+    margin: 8px 0 16px;
+    padding-left: 24px;
+  }
+
+  .document-body li {
+    margin-bottom: 8px;
+    color: #2f3b46;
+    line-height: 1.72;
+  }
+
   .detail-page {
     padding-top: 12px;
   }
